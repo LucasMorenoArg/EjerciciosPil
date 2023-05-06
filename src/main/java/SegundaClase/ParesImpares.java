@@ -27,8 +27,8 @@ public class ParesImpares {
 
     }
         while (num!=0);
-        System.out.println("Cantidad de numeros pares "+ contadorPar );
-        System.out.println("Cantidad de numeros impares "+ contadorImpar );
+        System.out.println("Cantidad de números pares "+ contadorPar );
+        System.out.println("Cantidad de números impares "+ contadorImpar );
 
     }
     }

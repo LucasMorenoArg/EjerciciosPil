@@ -14,7 +14,6 @@ public class Numeros {
 
     public static void main(String[] args) {
         int num=0;
-
         int acum=0;
         int acumScanner=0;
         int acumMenor=0;
@@ -40,43 +39,18 @@ public class Numeros {
                 }
                 num = scannerUno.nextInt();
                 acum+=num;
-                if (num<numMenor){
-                    numMenor=num;
-                }
-
-                if(num %2==0){
-                  contadorDePares++;
-                }
-                if(num%10==0){
-                    cero++;
-                }
-                if(num%10==1){
-                    uno++;
-                }
-                if(num%10==2){
-                    dos++;
-                }
-                if(num%10==3){
-                    tres++;
-                }
-                if(num%10==4){
-                    cuatro++;
-                }
-                if (num%10==5){
-                    cinco++;
-                }
-                if (num%10==6){
-                    seis++;
-                }
-                if (num%10==7){
-                    siete++;
-                }
-                if (num%10==8){
-                    ocho++;
-                }
-                if (num%10==9){
-                    nueve++;
-                }
+                if (num<numMenor){numMenor=num;}
+                if(num %2==0){contadorDePares++;}
+                if(num%10==0){cero++;}
+                if(num%10==1){uno++;}
+                if(num%10==2){dos++;}
+                if(num%10==3){tres++;}
+                if(num%10==4){cuatro++;}
+                if (num%10==5){cinco++;}
+                if (num%10==6){seis++;}
+                if (num%10==7){siete++;}
+                if (num%10==8){ocho++;}
+                if (num%10==9){nueve++;}
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -98,7 +72,7 @@ public class Numeros {
         System.out.println("Numeros finalizados en siete " + siete);
         System.out.println("Numeros finalizados en ocho " + ocho );
         System.out.println("Numeros finalizados en nueve " + nueve);
-        System.out.println(numMenor);
+        System.out.println("El numero menor es " + numMenor);
 
 
     }

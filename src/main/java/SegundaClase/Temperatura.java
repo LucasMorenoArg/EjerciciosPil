@@ -2,7 +2,7 @@ package SegundaClase;
 
 import java.util.Scanner;
 
-public class Temperaturas {
+public class Temperatura {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

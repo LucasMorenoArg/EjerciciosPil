@@ -13,7 +13,8 @@ public class Numeros {
     //Cantidad de numeros por cada digitos en que termine;
 
     public static void main(String[] args) {
-        int num;
+        int num=0;
+
         int acum=0;
         int acumScanner=0;
         int acumMenor=0;
@@ -28,20 +29,21 @@ public class Numeros {
         int siete=0;
         int ocho=0;
         int nueve=0;
+        int numMenor;
         Scanner scannerUno;
         try {
             scannerUno = new Scanner(new File("numeros.txt"));
-
+            numMenor=num;
             while(scannerUno.hasNext()){
                 if(scannerUno.hasNext()){
                     acumScanner++;
                 }
                 num = scannerUno.nextInt();
                 acum+=num;
-
-                if(num<(num+1)){
-                    acumMenor=num;
+                if (num<numMenor){
+                    numMenor=num;
                 }
+
                 if(num %2==0){
                   contadorDePares++;
                 }
@@ -96,7 +98,8 @@ public class Numeros {
         System.out.println("Numeros finalizados en siete " + siete);
         System.out.println("Numeros finalizados en ocho " + ocho );
         System.out.println("Numeros finalizados en nueve " + nueve);
-        System.out.println(total);
+        System.out.println(numMenor);
+
 
     }
 }

@@ -1,4 +1,4 @@
-package org.example;
+package PrimerClase;
 
 import java.util.Scanner;
 

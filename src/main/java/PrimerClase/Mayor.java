@@ -1,4 +1,4 @@
-package org.example;
+package PrimerClase;
 
 public class Mayor {
 

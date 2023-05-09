@@ -8,8 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Persona persMayor=new Persona();
+        Persona persMenor=new Persona(100);
 
-        try ( Scanner sc = new Scanner(new File("personas.txt"))) {
+        try ( Scanner sc = new Scanner(new File("personas2.txt"))) {
 
            sc.useDelimiter("[\\n\\r;]+");
             while (sc.hasNextLine()){
@@ -20,16 +22,23 @@ public class Main {
                String apellido = sc.next();
                String edad = sc.next();
                int intEdad = Integer.parseInt(edad);
-               Persona persona=new Persona(longDni,nombre,apellido,intEdad);
-               System.out.println(persona);
+               Persona persona = new Persona(longDni,nombre,apellido,intEdad);
 
-                if(persona.getEdad()>18){
-                    System.out.println(persona);
+                if(persona.getEdad() > persMayor.getEdad()){
+                    persMayor = persona;
+
+                }
+
+                if (persMenor.getEdad() > persona.getEdad()){
+                    persMenor = persona;
+
                 }
 
 
-
             }
+            System.out.println("Persona mayor " + persMayor);
+            System.out.println("Persona menor " + persMenor);
+
 
         }  catch (FileNotFoundException e) {
             throw new RuntimeException(e);

@@ -8,8 +8,6 @@ public class MainCodigo {
 
 
     public static void main(String[] args) {
-
-
         Scanner sc;
         Scanner sct;
         String localidadTeclado;
@@ -17,29 +15,24 @@ public class MainCodigo {
         try {
             sc = new Scanner(new File("CP.txt"));
             sct =new Scanner(System.in);
-            System.out.println("Ingrese la localidad ");
+            System.out.println(" Ingrese la localidad ");
             localidadTeclado = sct.nextLine().toUpperCase();
-            System.out.println(localidadTeclado);
-            String localidad =localidadTeclado;
-            CodigoPostal cp = new CodigoPostal(localidad);
+
             sc.useDelimiter("[\\n\\r;]+");
+
             while (sc.hasNextLine()) {
+                String provincia = sc.next();
+                String codigo = sc.next();
+                String localidad = sc.next();
+                CodigoPostal cp = new CodigoPostal(provincia,codigo,localidad);
 
 
-
-            if(cp.getLocalidad() == localidad. ){
-                System.out.println(cp.getLocalidad());
+                if(cp.getLocalidad().contains(localidadTeclado)){
+                    System.out.println(cp.getLocalidad() + " " + provincia);
+                }
             }
-
-
-
-            }
-            //System.out.println(cp.getLocalidad());
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }

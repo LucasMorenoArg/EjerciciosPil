@@ -4,11 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class MainPersona {
 
     public static void main(String[] args) {
 
-        Persona persMayor=new Persona();
+        Persona persMayor=null;
         Persona persMenor=new Persona(100);
 
         try ( Scanner sc = new Scanner(new File("personas2.txt"))) {
@@ -39,6 +39,9 @@ public class Main {
             System.out.println("Persona mayor " + persMayor);
             System.out.println("Persona menor " + persMenor);
 
+            String cadena = "qwerty1 qwerty2";
+            String ert;
+            //System.out.println(ert.split(cadena));
 
         }  catch (FileNotFoundException e) {
             throw new RuntimeException(e);

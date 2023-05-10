@@ -15,7 +15,7 @@ public class MainCodigo {
         try {
             sc = new Scanner(new File("CP.txt"));
             sct =new Scanner(System.in);
-            System.out.println(" Ingrese la localidad ");
+            System.out.println(" --Ingrese la localidad-- ");
             localidadTeclado = sct.nextLine().toUpperCase();
 
             sc.useDelimiter("[\\n\\r;]+");

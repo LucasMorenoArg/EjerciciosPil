@@ -11,19 +11,7 @@ public class Persona {
     String nombre;
     String apellido;
     int edad;
-
     double promedio;
-    ArrayList<Persona> pers = new ArrayList<>();
-    Scanner sc;
-
-    {
-        try {
-            sc = new Scanner(new File("personas2.txt"));
-
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public Persona() {
     }
@@ -79,28 +67,5 @@ public class Persona {
                 ", apellido='" + apellido + '\'' +
                 ", edad=" + edad +
                 '}';
-    }
-
-    public ArrayList<Persona> arrayt() {
-        sc.useDelimiter("[\\n\\r;]+");
-        while (sc.hasNextLine()) {
-            String dni = sc.next();
-            Long longDni = Long.parseLong(dni);
-            String nombre = sc.next();
-            String apellido = sc.next();
-            String edad = sc.next();
-            int intEdad = Integer.parseInt(edad);
-            Persona persona = null;
-            persona = new Persona(longDni, nombre, apellido, intEdad);
-            pers.add(persona);
-        }
-        return pers;
-    }
-
-    public double promedioEdad(){
-
-        double acum=0;
-
-        return promedio ;
     }
 }

@@ -13,7 +13,7 @@ public class MainCodigo {
         String localidadTeclado;
 
         try {
-            sc = new Scanner(new File("CP.txt"));
+            sc = new Scanner(new File("cp.txt"));
             sct =new Scanner(System.in);
             System.out.println(" --Ingrese la localidad-- ");
             localidadTeclado = sct.nextLine().toUpperCase();

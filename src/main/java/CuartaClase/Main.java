@@ -14,12 +14,15 @@ public class Main {
         public static void main(String[] args) {
 
             PersonaService pers= new PersonaService();
+            //CPostalService cp =new CPostalService();
             System.out.println("Promedio de edad " + pers.calcularPromedioEdades() + " años");
             System.out.println("Cantidad  de personas mayores al promedio " + pers.edadMayorPromedio());
             System.out.println("Datos de la persona mayor " + pers.personaMayor());
             System.out.println("Datos de la persona mayor " + pers.personaMenor());
 
             pers.busquedaPorTeclado();
+
+            //cp.llenarLista();
 
 
         }

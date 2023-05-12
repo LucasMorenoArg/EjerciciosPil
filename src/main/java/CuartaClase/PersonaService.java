@@ -107,8 +107,6 @@ public class PersonaService {
 
         }
         System.out.println(personaArrayList);
-        System.out.println(personaArrayList.size());
-
 
 
     }

@@ -1,9 +1,4 @@
-package CuartaClase;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+package Modulo_01.Clase_04;
 
 public class Persona {
 

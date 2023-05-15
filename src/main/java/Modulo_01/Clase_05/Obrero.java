@@ -1,15 +1,9 @@
-package QuintaClase;
+package Modulo_01.Clase_05;
 
-public class Administrativo extends Empleado{
+public class Obrero extends Empleado {
 
-    boolean presentismo= false;
 
-    public boolean isPresentismo() {
-        return presentismo;
-    }
-
-    public void setPresentismo(boolean presentismo) {
-        this.presentismo = presentismo;
+    public Obrero() {
     }
 
     public double getDiasTrabajados() {
@@ -28,23 +22,15 @@ public class Administrativo extends Empleado{
         this.valorDia = valorDia;
     }
 
-    public Administrativo() {
-    }
-
-    public Administrativo(double sueldo) {
+    public Obrero(double sueldo) {
         super(sueldo);
     }
 
+
     @Override
     public double calcularSueldo() {
-
-        double sueldo;
-        if (isPresentismo()==false){
-
-          sueldo=getDiasTrabajados()*getValorDia();}
-        else { sueldo=getDiasTrabajados()*getValorDia()*1.15;}
-
-        return sueldo;
+         double sueldoTotal= getDiasTrabajados()*getValorDia();
+        return sueldoTotal;
     }
 
     @Override
@@ -57,8 +43,12 @@ public class Administrativo extends Empleado{
         super.setSueldo(sueldo);
     }
 
+
+
     @Override
     public String toString() {
-        return "Administrativo{}";
+        return "Obrero{" +
+                "sueldo=" + sueldo +
+                '}';
     }
 }

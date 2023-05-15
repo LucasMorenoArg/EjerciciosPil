@@ -1,4 +1,4 @@
-package PrimerClase;
+package Modulo_01.Clase_01;
 
 import java.io.File;
 import java.io.FileNotFoundException;

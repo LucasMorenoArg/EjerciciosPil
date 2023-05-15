@@ -1,4 +1,4 @@
-package TerceraClase;
+package Modulo_01.Clase_03;
 
 import java.util.Scanner;
 

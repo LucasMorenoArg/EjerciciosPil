@@ -1,4 +1,4 @@
-package SegundaClase;
+package Modulo_01.Clase_02;
 
 import java.util.Scanner;
 

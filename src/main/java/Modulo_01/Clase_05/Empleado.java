@@ -1,4 +1,4 @@
-package QuintaClase;
+package Modulo_01.Clase_05;
 
 public abstract class Empleado {
 

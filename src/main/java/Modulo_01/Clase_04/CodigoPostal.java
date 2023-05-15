@@ -1,4 +1,4 @@
-package CuartaClase;
+package Modulo_01.Clase_04;
 
 public class CodigoPostal {
 

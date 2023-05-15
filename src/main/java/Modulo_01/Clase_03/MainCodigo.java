@@ -1,4 +1,4 @@
-package TerceraClase;
+package Modulo_01.Clase_03;
 
 import java.io.File;
 import java.io.FileNotFoundException;

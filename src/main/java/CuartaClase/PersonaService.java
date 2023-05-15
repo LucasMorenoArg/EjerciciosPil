@@ -88,7 +88,7 @@ public class PersonaService {
 
     public void busquedaPorTeclado(){
 
-        System.out.println("Ingrese un apellido por teclado ");
+        System.out.println("--Ingrese un apellido por teclado--");
         Scanner scApellido = new Scanner(System.in);
         String apellido = scApellido.next().toUpperCase();
         ArrayList<Persona> personaArrayList= new ArrayList<>();

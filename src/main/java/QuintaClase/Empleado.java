@@ -1,6 +1,6 @@
 package QuintaClase;
 
-public class Empleado {
+public abstract class Empleado {
 
 
     double sueldo;
@@ -19,6 +19,10 @@ public class Empleado {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+
+    public abstract double calcularSueldo();
+
+
 
     @Override
     public String toString() {

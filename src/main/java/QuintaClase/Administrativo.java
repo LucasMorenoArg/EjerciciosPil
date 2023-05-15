@@ -2,9 +2,6 @@ package QuintaClase;
 
 public class Administrativo extends Empleado{
 
-    double diasTrabajados;
-    double valorDia;
-
     boolean presentismo= false;
 
     public boolean isPresentismo() {

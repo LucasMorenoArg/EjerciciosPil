@@ -18,6 +18,13 @@ public class MainClase5 {
         ((Obrero) obrero).setValorDia(4000);
         System.out.println("Sueldo total de obrero en pesos es igual a $" + obrero.calcularSueldo());
 
+        ((Vendedor) vendedor).setDiasTrabajados(20);
+        ((Vendedor) vendedor).setValorDia(4000);
+        ((Vendedor) vendedor).setVentas(10000);
+
+        System.out.println("Sueldo total de obrero en pesos es igual a $" + vendedor.getSueldo());
+
+
 
 
     }

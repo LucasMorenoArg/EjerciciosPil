@@ -2,16 +2,13 @@ package QuintaClase;
 
 public class Vendedor extends Empleado {
 
-    double diasTrabajados;
-    double valorDia;
-
     double ventas=0;
 
 
-
-    public Vendedor(double sueldo) {
-        super(sueldo);
+    public Vendedor() {
     }
+
+
 
     public double getDiasTrabajados() {
         return diasTrabajados;
@@ -47,7 +44,7 @@ public class Vendedor extends Empleado {
 
         sueldo = 0;
         if (getVentas() > 0) {
-            sueldo = getDiasTrabajados() * getValorDia() * (getVentas() * 1.01);
+            sueldo = (getDiasTrabajados() * getValorDia()) + (getVentas() * 1.0/100);
         } else {
             sueldo = getDiasTrabajados() * getValorDia();
         } return sueldo;

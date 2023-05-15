@@ -2,8 +2,7 @@ package QuintaClase;
 
 public class Obrero extends Empleado {
 
-    double diasTrabajados;
-    double valorDia;
+
     public Obrero() {
     }
 

@@ -2,7 +2,8 @@ package QuintaClase;
 
 public abstract class Empleado {
 
-
+    double diasTrabajados;
+    double valorDia;
     double sueldo;
 
     public Empleado() {

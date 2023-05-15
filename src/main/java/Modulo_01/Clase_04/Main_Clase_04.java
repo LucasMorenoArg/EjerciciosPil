@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class MainClase4 {
+public class Main_Clase_04 {
 
 
         public static void main(String[] args) {
@@ -24,8 +24,9 @@ public class MainClase4 {
                     String apellido = sctxt.next().toUpperCase();
                     String edad = sctxt.next();
                     int edadInt = Integer.parseInt(edad);
-
+                    System.out.println();
                     Persona pers = new Persona(longDni,nombre,apellido,edadInt);
+                    System.out.println(pers);
 
                     pl1.agregarPersona(pers);
 

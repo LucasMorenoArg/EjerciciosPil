@@ -9,33 +9,9 @@ public class PersonaService {
 
     ArrayList<Persona> pers = new ArrayList<>();
 
-    public PersonaService() {
-        llenarLista();
-    }
 
-    public void llenarLista() {
 
-        Scanner sc;
 
-        try {
-            sc = new Scanner(new File("personas2.txt"));
-
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-        sc.useDelimiter("[\\n\\r;]+");
-        while (sc.hasNextLine()) {
-            String dni = sc.next();
-            Long longDni = Long.parseLong(dni);
-            String nombre = sc.next();
-            String apellido = sc.next();
-            String edad = sc.next();
-            int intEdad = Integer.parseInt(edad);
-            Persona persona = new Persona(longDni, nombre, apellido, intEdad);
-            pers.add(persona);
-        }
-    }
 
     public double calcularPromedioEdades() {
         int edades = 0;

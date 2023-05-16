@@ -26,12 +26,7 @@ public class Main_Clase_04 {
                     int edadInt = Integer.parseInt(edad);
                     System.out.println();
                     Persona pers = new Persona(longDni,nombre,apellido,edadInt);
-                    System.out.println(pers);
-
                     pl1.agregarPersona(pers);
-
-
-
                 }
 
 
@@ -39,6 +34,11 @@ public class Main_Clase_04 {
                 throw new RuntimeException(e);
             }
 
+
+
+            //System.out.println("Persona mayor " + pl1.personaMayor());
+            //System.out.println("Persona menor " +pl1.personaMenor());
+            System.out.println("Persona mayor " + pl1.personaMayor());
 
         }
   }

@@ -1,6 +1,6 @@
 package Modulo_01.Clase_05;
 
-public class MainClase5 {
+public class Main_Clase_05 {
 
     public static void main(String[] args) {
 

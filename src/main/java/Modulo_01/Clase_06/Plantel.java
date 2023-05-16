@@ -16,7 +16,7 @@ public class Plantel {
         listadoEmpleados.add(e);
 
     }
-
+//https://xmind.app/m/te7XjH/
     public void sueldoTotal(){
 
 

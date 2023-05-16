@@ -15,22 +15,12 @@ public class Plantel {
     }
 
 
-    /*public Persona personaMenor(){
-        Persona personaMenor = null;
-        for (int i=0; i<personaArrayList.size(); i++){
-
-       if(personaArrayList.get(i).getEdad()<100){
-            personaMenor = personaArrayList.get(i);}
-       }
-
-        return personaMenor;
-    }*/
 
     public Persona personaMayor() {
         Persona personaAux = new Persona(0);
         for(int i=0; i<personaArrayList.size();i++){
 
-            if(personaArrayList.get(i).getEdad() > personaAux.getEdad()){
+            if(personaAux == null|| personaArrayList.get(i).getEdad() > personaAux.getEdad()){
                 personaAux=personaArrayList.get(i);
             }
         }

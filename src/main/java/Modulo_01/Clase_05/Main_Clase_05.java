@@ -8,6 +8,7 @@ public class Main_Clase_05 {
         Empleado administrativo = new Administrativo();
         Empleado vendedor = new Vendedor();
 
+
         ((Administrativo) administrativo).setDiasTrabajados(20);
         ((Administrativo) administrativo).setValorDia(4000);
         ((Administrativo) administrativo).setPresentismo(true);
@@ -18,10 +19,10 @@ public class Main_Clase_05 {
         ((Obrero) obrero).setValorDia(4000);
         System.out.println("Sueldo total de obrero en pesos es igual a $" + obrero.calcularSueldo());
 
+
         ((Vendedor) vendedor).setDiasTrabajados(20);
         ((Vendedor) vendedor).setValorDia(4000);
         ((Vendedor) vendedor).setVentas(10000);
-
         System.out.println("Sueldo total de obrero en pesos es igual a $" + vendedor.getSueldo());
 
 

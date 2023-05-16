@@ -1,0 +1,67 @@
+package Modulo_01.Clase_06;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main_Clase_06 {
+
+    ArrayList<Empleado> empleado = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Plantel plantel =new Plantel();
+        Empleado empleado;
+        Obrero obrero = null;
+        Administrativo administrativo = null;
+        Vendedor vendedor = null;
+
+        Scanner sc;
+        {
+           try {
+                sc = new Scanner(new File("empleados.csv"));
+                sc.useDelimiter("[\\n\\r;]+");
+
+
+                while (sc.hasNextLine()) {
+                    int tipo = sc.nextInt();
+
+                    int legajo = sc.nextInt();
+
+                    String nombre = sc.next();
+
+                    double sueldo = sc.nextDouble();
+
+                    switch (tipo){
+                        case 1 :
+                            int diasTrabajados = sc.nextInt();
+                            plantel.agregarEmpleado(new Obrero(legajo,nombre,sueldo,diasTrabajados));
+                            break;
+
+                        case 2:
+                            boolean presentismo = sc.nextBoolean();
+                            plantel.agregarEmpleado(new Administrativo(legajo,nombre,sueldo,presentismo));
+                            break;
+
+                        case 3:
+                            double totalVentas = sc.nextDouble();
+                            plantel.agregarEmpleado(new Vendedor(legajo,nombre,sueldo,totalVentas));
+
+                    }
+
+
+             }
+
+
+
+
+
+
+
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+}

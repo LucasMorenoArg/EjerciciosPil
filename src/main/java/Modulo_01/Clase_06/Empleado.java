@@ -5,7 +5,6 @@ package Modulo_01.Clase_06;
 
         private int legajo;
         private String nombre;
-
         private double sueldoBasico;
 
         public Empleado(int legajo, String nombre, double sueldoBasico) {
@@ -41,6 +40,15 @@ package Modulo_01.Clase_06;
         // Obliga la sobreescritura
         public abstract double calcularSueldo();
 
+        @Override
+        public String toString() {
+            return "Empleado{" +
+                    "legajo=" + legajo +
+                    ", nombre='" + nombre + '\'' +
+                    ", sueldoBasico=" + sueldoBasico +
+                    '}';
+        }
     }
+
 
 

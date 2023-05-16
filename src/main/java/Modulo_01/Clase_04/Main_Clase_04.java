@@ -27,6 +27,7 @@ public class Main_Clase_04 {
                     System.out.println();
                     Persona pers = new Persona(longDni,nombre,apellido,edadInt);
                     pl1.agregarPersona(pers);
+                    System.out.println(pers);
                 }
 
 

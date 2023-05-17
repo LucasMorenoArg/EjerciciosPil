@@ -1,21 +1,20 @@
 package Modulo_01.Clase_06.ConjuntoEmpleados;
 
 import Modulo_01.Clase_06.ListaEmpleados.Administrativo;
-import Modulo_01.Clase_06.ListaEmpleados.Empleado;
 import Modulo_01.Clase_06.ListaEmpleados.Obrero;
 import Modulo_01.Clase_06.ListaEmpleados.Vendedor;
 
 import java.util.ArrayList;
 
-public class ConjuntoEmpleado {
+public class ConjuntoEmpleados {
 
-    private ArrayList<Empleado> conjuntoEmpleados;
+    private ArrayList<ConjEmpleado> conjuntoEmpleados;
 
-    public ConjuntoEmpleado() {
+    public ConjuntoEmpleados() {
         conjuntoEmpleados = new ArrayList<>();
     }
 
-    public void agregarEmpleado(Empleado e) {
+    public void agregarEmpleado(ConjEmpleado e) {
         conjuntoEmpleados.add(e);
 
     }
@@ -28,17 +27,17 @@ public class ConjuntoEmpleado {
 
         for (int i = 0; i < conjuntoEmpleados.size(); i++) {
 
-            if (conjuntoEmpleados.get(i) instanceof Obrero) {
+            if (conjuntoEmpleados.get(i) instanceof ConjObrero) {
                 sueldoObrero += conjuntoEmpleados.get(i).calcularSueldo();
 
             }
 
-            if (conjuntoEmpleados.get(i) instanceof Administrativo) {
+            if (conjuntoEmpleados.get(i) instanceof ConjAdministrativo) {
                 sueldoAdmin += conjuntoEmpleados.get(i).calcularSueldo();
 
             }
 
-            if (conjuntoEmpleados.get(i) instanceof Vendedor) {
+            if (conjuntoEmpleados.get(i) instanceof ConjVendedor) {
                 sueldoVendedor += conjuntoEmpleados.get(i).calcularSueldo();
 
             }

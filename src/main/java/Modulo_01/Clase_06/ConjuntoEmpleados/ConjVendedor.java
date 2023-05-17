@@ -2,7 +2,7 @@ package Modulo_01.Clase_06.ConjuntoEmpleados;
 
 import Modulo_01.Clase_06.ListaEmpleados.Empleado;
 
-public class ConjVendedor extends Empleado {
+public class ConjVendedor extends ConjEmpleado {
 
         private double totalVentas;
 

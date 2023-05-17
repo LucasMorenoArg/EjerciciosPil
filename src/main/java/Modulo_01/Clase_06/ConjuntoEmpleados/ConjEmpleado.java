@@ -1,31 +1,33 @@
 package Modulo_01.Clase_06.ConjuntoEmpleados;
 
 public abstract class ConjEmpleado {
+    int tipo;
     double diasTrabajados;
     double valorDia;
-    double sueldo;
+    double sueldoBasico;
 
     public ConjEmpleado() {
     }
 
     public ConjEmpleado(double sueldo) {
-        this.sueldo = sueldo;
+        this.sueldoBasico = sueldo;
     }
 
-    public double getSueldo() {
-        return sueldo;
+    public double getSueldoBasico() {
+        return sueldoBasico;
     }
 
-    public void setSueldo(double sueldo) {
-        this.sueldo = sueldo;
-    }
+
 
     public abstract double calcularSueldo();
 
     @Override
     public String toString() {
-        return "Empleado{" +
-                "sueldo=" + sueldo +
+        return "ConjEmpleado{" +
+                "tipo=" + tipo +
+                ", diasTrabajados=" + diasTrabajados +
+                ", valorDia=" + valorDia +
+                ", sueldoBasico=" + sueldoBasico +
                 '}';
     }
 }

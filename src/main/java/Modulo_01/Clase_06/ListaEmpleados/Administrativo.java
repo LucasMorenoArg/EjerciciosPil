@@ -1,4 +1,6 @@
-package Modulo_01.Clase_06;
+package Modulo_01.Clase_06.ListaEmpleados;
+
+import Empleado;
 
 public class Administrativo extends Empleado {
 

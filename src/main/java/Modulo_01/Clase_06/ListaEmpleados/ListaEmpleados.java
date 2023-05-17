@@ -1,4 +1,4 @@
-package Modulo_01.Clase_06;
+package Modulo_01.Clase_06.ListaEmpleados;
 
 import java.util.ArrayList;
 

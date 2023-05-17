@@ -1,10 +1,12 @@
-package Modulo_01.Clase_06.ListaEmpleados;
+package Modulo_01.Clase_06.ConjuntoEmpleados;
 
-public class Administrativo extends Empleado {
+import Modulo_01.Clase_06.ListaEmpleados.Empleado;
+
+public class ConjAdministrativo extends Empleado {
 
     private boolean presentismo;
 
-    public Administrativo(int legajo, String nombre, double sueldoBasico, boolean presentismo) {
+    public ConjAdministrativo(int legajo, String nombre, double sueldoBasico, boolean presentismo) {
         super(legajo, nombre, sueldoBasico);
         this.presentismo = presentismo;
     }

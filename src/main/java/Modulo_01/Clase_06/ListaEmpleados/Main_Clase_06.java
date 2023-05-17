@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Main_Clase_06 {
 
-    ArrayList<Empleado> empleado = new ArrayList<>();
 
     public static void main(String[] args) {
         ListaEmpleados plantel =new ListaEmpleados();

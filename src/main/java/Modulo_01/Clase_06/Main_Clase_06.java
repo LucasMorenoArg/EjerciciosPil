@@ -3,7 +3,6 @@ package Modulo_01.Clase_06;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main_Clase_06 {
@@ -11,7 +10,7 @@ public class Main_Clase_06 {
     ArrayList<Empleado> empleado = new ArrayList<>();
 
     public static void main(String[] args) {
-        Plantel plantel =new Plantel();
+        ListaEmpleados plantel =new ListaEmpleados();
         Empleado empleado;
         Obrero obrero = null;
         Administrativo administrativo = null;
@@ -22,7 +21,6 @@ public class Main_Clase_06 {
            try {
                 sc = new Scanner(new File("empleados.csv"));
                 sc.useDelimiter("[\\n\\r;]+");
-
 
                 while (sc.hasNextLine()) {
                     int tipo = sc.nextInt();
@@ -49,14 +47,13 @@ public class Main_Clase_06 {
                             plantel.agregarEmpleado(new Vendedor(legajo,nombre,sueldo,totalVentas));
 
                     }
-
-
              }
 
 
-
-
-
+               System.out.println("Total sueldos= "+plantel.sueldoTotal());
+               System.out.println(plantel.cantEmplTipo());
+               System.out.println("Total presentismo " + plantel.presentAdministradores());
+               System.out.println(plantel.empleados200M());
 
 
             } catch (FileNotFoundException e) {

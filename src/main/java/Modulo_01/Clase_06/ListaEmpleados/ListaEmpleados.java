@@ -14,7 +14,6 @@ public class ListaEmpleados {
         listadoEmpleados.add(e);
 
     }
-
     //https://xmind.app/m/te7XjH/
     public Double sueldoTotal() {
         double sueldoObrero = 0;
@@ -44,7 +43,7 @@ public class ListaEmpleados {
         return sueldoObrero + sueldoAdmin + sueldoVendedor;
     }
 
-    //listadoEmpleados.get(i) instanceof Administrativo
+
     public int presentAdministradores() {
         int presentismo = 0;
         for (int i = 0; i < listadoEmpleados.size(); i++) {
@@ -87,7 +86,36 @@ public class ListaEmpleados {
         }
         return "Total 200M" + contador;
     }
-}
+
+
+    public Empleado sueldoMenor(){
+        Empleado sueldoBajo= null;
+        for (int i =0; i < listadoEmpleados.size(); i++) {
+              if ( sueldoBajo == null || listadoEmpleados.get(i).calcularSueldo() < sueldoBajo.calcularSueldo() ){
+                  sueldoBajo = listadoEmpleados.get(i);
+              }
+            } return sueldoBajo;
+        }
+
+
+        public double promedioObreros(){
+        Empleado obrero = null;
+        double promedio=0;
+        double acum =0;
+
+        for( int i=0; i < listadoEmpleados.size(); i++){
+            if (listadoEmpleados.get(i) instanceof Obrero){
+               promedio += listadoEmpleados.get(i).calcularSueldo();
+               acum++;
+
+            }
+        }
+        double total=promedio/acum;
+
+        return total;
+        }
+     }
+
 
 
 

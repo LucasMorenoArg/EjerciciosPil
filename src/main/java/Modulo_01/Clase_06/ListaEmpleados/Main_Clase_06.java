@@ -10,10 +10,6 @@ public class Main_Clase_06 {
 
     public static void main(String[] args) {
         ListaEmpleados plantel =new ListaEmpleados();
-        Empleado empleado;
-        Obrero obrero = null;
-        Administrativo administrativo = null;
-        Vendedor vendedor = null;
 
         Scanner sc;
         {
@@ -48,11 +44,12 @@ public class Main_Clase_06 {
                     }
              }
 
-
-               System.out.println("Total sueldos= "+plantel.sueldoTotal());
-               System.out.println(plantel.cantEmplTipo());
+               System.out.println(plantel.cantEmplTipo());//Cantidad total de empleados por tipo.
+               System.out.println("Total sueldos= "+plantel.sueldoTotal());//Total de sueldos general.
                System.out.println("Total presentismo " + plantel.presentAdministradores());
-               System.out.println(plantel.empleados200M());
+               System.out.println("Sueldo mas Bajo " + plantel.sueldoMenor());
+               System.out.println("Sueldo Promedio Obreros " + plantel.promedioObreros());
+
 
 
             } catch (FileNotFoundException e) {

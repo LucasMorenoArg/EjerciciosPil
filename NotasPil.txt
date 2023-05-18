@@ -1,0 +1,45 @@
+
+Clase 4 (12/05). 
+
+Tarea: https://xmind.app/m/sbuAHp
+Main--->muestre las tres intancias y el sueldo de cada tipo.
+empleado + 3 derivadas.
+
+Clase 05---https://xmind.app/m/sbuAHp
+Lunes 15/05 polimorfismo.
+
+Tarea 15/05
+Modulo polimorfismo y composición.
+Clase 06---https://xmind.app/m/te7XjH/
+
+Obrero: Cobra por dia trabajado.
+Vendedor: 1% por venta.
+Administrativo: Presentismo %15+.
+
+3;2870;ESTEBAN MARQUEZ;15000;866100
+2;6592;AGUSTIN PRIETO;81000;false
+1;9071;RAFAEL ROJAS;10000;26
+
+Tarea para el viernes
+Diego Serrano 16:17
+1. Del ejercicio de los empleados agregar un metodo que devuelva un ArrayList de empleados pero ordenado por nombre.
+2. Del ejercicio de la carga de personas (Plantel de la clase 4), agregar un método que devuelva un arraylist de personas ordenadas porapellido y nombre. 
+Es decir que todas las personas que tengan el mis-mo apellido deben estar juntas pero ordenadas entre sí por nombre
+
+Van a tener que investigar los metodos:-addAll -Collections.sort
+Tambien compareTo con más de un criterio
+
+Composicion de dos niveles.
+Entega de tp.
+
+https://classroom.github.com/a/354-Scis
+https://github.com/Cursos-diegojserrano/trabajo-practico-modulo-1-LucasMorenoArg
+
+
+trabajo-practico-modulo-1-LucasMorenoArg
+
+
+
+
+
+

@@ -28,8 +28,8 @@ public class Main_Clase_06 {
 
                     switch (tipo){
                         case 1 :
-                            int diasTrabajados = sc.nextInt();
-                            plantel.agregarEmpleado(new Obrero(legajo,nombre,sueldo,diasTrabajados));
+                           // int diasTrabajados = sc.nextInt();
+                            plantel.agregarEmpleado(new Obrero(legajo,nombre,sueldo,sc.nextInt()));
                             break;
 
                         case 2:
@@ -40,7 +40,6 @@ public class Main_Clase_06 {
                         case 3:
                             double totalVentas = sc.nextDouble();
                             plantel.agregarEmpleado(new Vendedor(legajo,nombre,sueldo,totalVentas));
-
                     }
              }
 

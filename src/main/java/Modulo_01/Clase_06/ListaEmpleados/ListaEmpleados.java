@@ -1,8 +1,11 @@
 package Modulo_01.Clase_06.ListaEmpleados;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
-public class ListaEmpleados {
+public class ListaEmpleados implements Comparator<Empleado>{
 
     private ArrayList<Empleado> listadoEmpleados;
 
@@ -114,7 +117,29 @@ public class ListaEmpleados {
 
         return total;
         }
-     }
+
+    /*@Override
+    public int compare(ListaEmpleados o1, ListaEmpleados o2) {
+
+        for (:
+             ) {
+            
+        }
+        return 0;
+    }*/
+
+
+
+    @Override
+    public int compare(Empleado o1, Empleado o2) {
+        return o1.getNombre().compareTo(o2.getNombre());
+    }
+
+    public List<Empleado> ordenarEmpleados() {
+        listadoEmpleados.sort(this::compare);
+        return listadoEmpleados;
+    }
+}
 
 
 

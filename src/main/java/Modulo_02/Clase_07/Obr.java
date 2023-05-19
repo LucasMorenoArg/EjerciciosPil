@@ -21,7 +21,7 @@ public class Obr extends Empl {
 
     @Override
     public double calcularSueldo() {
-        return 0;
+        return getSueldoBasico() / 20 * diasTrabajados;
     }
 
     @Override

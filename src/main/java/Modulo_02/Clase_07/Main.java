@@ -24,22 +24,23 @@ public class Main {
                     int legajo = sc.nextInt();
                     String nombre = sc.nextLine();
                     double sueldo = sc.nextDouble();
-                    int diasTrabajados = sc.nextInt();
+
                     boolean presentismo = sc.hasNextBoolean();
 
                     switch (tipo){
 
                         case 1 :
+                            int diasTrabajados = sc.nextInt();
                             plantel.agregarEmpleado(new Obr(legajo,nombre,sueldo,diasTrabajados));
                             break;
 
-                        case 2 :
+                       /* case 2 :
                             plantel.agregarEmpleado(new Vndr(legajo,nombre,sueldo,diasTrabajados));
                             break;
 
                         case 3 :
                             plantel.agregarEmpleado(new Admin(legajo,nombre,sueldo,presentismo));
-                            break;
+                            break;*/
 
                     }
 

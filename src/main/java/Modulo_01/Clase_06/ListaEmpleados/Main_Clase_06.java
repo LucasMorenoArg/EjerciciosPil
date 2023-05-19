@@ -14,7 +14,7 @@ public class Main_Clase_06 {
         Scanner sc;
         {
            try {
-                sc = new Scanner(new File("empleados.csv"));
+                sc = new Scanner(new File("empleadosss.txt"));
                 sc.useDelimiter("[\\n\\r;]+");
 
                 while (sc.hasNextLine()) {
@@ -28,8 +28,8 @@ public class Main_Clase_06 {
 
                     switch (tipo){
                         case 1 :
-                           // int diasTrabajados = sc.nextInt();
-                            plantel.agregarEmpleado(new Obrero(legajo,nombre,sueldo,sc.nextInt()));
+                            int diasTrabajados = sc.nextInt();
+                            plantel.agregarEmpleado(new Obrero(legajo,nombre,sueldo,diasTrabajados));
                             break;
 
                         case 2:
@@ -48,6 +48,7 @@ public class Main_Clase_06 {
                System.out.println("Total presentismo " + plantel.presentAdministradores());
                System.out.println("Sueldo mas Bajo " + plantel.sueldoMenor());
                System.out.println("Sueldo Promedio Obreros " + plantel.promedioObreros());
+               System.out.println("Lista ordenada por nombre " + plantel.ordenarEmpleados());
 
 
 

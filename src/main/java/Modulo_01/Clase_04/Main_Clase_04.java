@@ -40,6 +40,7 @@ public class Main_Clase_04 {
             //System.out.println("Persona mayor " + pl1.personaMayor());
             //System.out.println("Persona menor " +pl1.personaMenor());
             System.out.println("Persona mayor " + pl1.personaMayor());
+            System.out.println("Lista Ordenada por nombre y apellido " + pl1.ordenarListaPersonas());
 
         }
   }

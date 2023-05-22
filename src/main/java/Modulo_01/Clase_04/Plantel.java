@@ -9,8 +9,7 @@ import java.util.List;
 public class Plantel implements Comparator<Persona> {
 
 
-       private ArrayList<Persona> personaArrayList = new ArrayList<>();
-
+    private ArrayList<Persona> personaArrayList = new ArrayList<>();
 
 
     public void agregarPersona(Persona persona) {
@@ -18,13 +17,12 @@ public class Plantel implements Comparator<Persona> {
     }
 
 
-
     public Persona personaMayor() {
         Persona personaAux = new Persona(0);
-        for(int i=0; i<personaArrayList.size();i++){
+        for (int i = 0; i < personaArrayList.size(); i++) {
 
-            if(personaAux == null|| personaArrayList.get(i).getEdad() > personaAux.getEdad()){
-                personaAux=personaArrayList.get(i);
+            if (personaAux == null || personaArrayList.get(i).getEdad() > personaAux.getEdad()) {
+                personaAux = personaArrayList.get(i);
             }
         }
 
@@ -33,10 +31,18 @@ public class Plantel implements Comparator<Persona> {
 
     @Override
     public int compare(Persona o1, Persona o2) {
-        String nombreCompletoO1 = o1.getNombre() + " " +o1.getApellido();
-        String nombreCompletoO2 = o2.getNombre() + " " +o2.getApellido();
+        //String nombreCompletoO1 = o1.getNombre() + " " +o1.getApellido();
+        //String nombreCompletoO2 = o2.getNombre() + " " +o2.getApellido();
 
-        return nombreCompletoO1.compareTo(nombreCompletoO2);
+        //return nombreCompletoO1.compareTo(nombreCompletoO2);
+
+        if (o1.getApellido().equals(o2.getApellido()))
+
+             return o1.getNombre().compareTo(o2.getNombre());
+         else
+             return o1.getApellido().compareTo(o2.getApellido());
+
+
     }
 
     public List<Persona> ordenarListaPersonas() {

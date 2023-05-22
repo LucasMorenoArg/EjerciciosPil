@@ -10,7 +10,7 @@ public class Main_Pruebas {
 
     public static void main(String[] args) {
 
-
+/*
         ArrayList<Person> personas = new ArrayList<>();
 
 
@@ -23,7 +23,10 @@ public class Main_Pruebas {
         Collections.sort(personas,new PersonaComparator());
         for (Person p : personas) {
             System.out.println(p);
-        }
+        }*/
+
+        Par a= new Par<>("abcd","1234");
+
 
 
 

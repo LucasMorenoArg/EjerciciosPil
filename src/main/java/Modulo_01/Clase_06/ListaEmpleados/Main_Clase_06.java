@@ -17,6 +17,7 @@ public class Main_Clase_06 {
                 sc = new Scanner(new File("empleadosss.txt"));
                 sc.useDelimiter("[\\n\\r;]+");
 
+
                 while (sc.hasNextLine()) {
                     int tipo = sc.nextInt();
 

@@ -1,0 +1,6 @@
+juan Martinez;3;true;1
+Pedro Gonzales;4;true;2
+Juan Torres;5;false;3
+Lucho Makario;10;true;4
+Joaquin Lopez;10;true;4
+Joaquin Lopez;10;true;4

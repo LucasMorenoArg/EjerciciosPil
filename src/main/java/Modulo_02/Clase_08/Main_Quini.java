@@ -1,14 +1,20 @@
 package Modulo_02.Clase_08;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Main_Quini {
     public static void main(String[] args) {
-        Carton carton = new Carton();
+        Sorteo sorteo = new Sorteo();
+        Boleta carton = new Boleta();
+       // System.out.println(sorteo.generarSorteo());
+       // System.out.println(carton.jugadas());
+        sorteo.comparador();
 
 
-        carton.jugadas();
+
+
+
+
 
     }
 

@@ -1,6 +1,6 @@
 package Modulo_02.Clase_07;
 
-public class Admin extends Empl{
+public class Admin extends Empl {
 
     private boolean presentismo;
 

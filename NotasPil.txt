@@ -11,6 +11,7 @@ Lunes 15/05 polimorfismo.
 Tarea 15/05
 Modulo polimorfismo y composición.
 Clase 06---https://xmind.app/m/te7XjH/
+Clase 09--- https://xmind.app/m/wcdpSw/
 
 Obrero: Cobra por dia trabajado.
 Vendedor: 1% por venta.
@@ -39,6 +40,12 @@ https://github.com/Cursos-diegojserrano/trabajo-practico-modulo-1-LucasMorenoArg
 Clase que viene coleccciones.
 trabajo-practico-modulo-1-LucasMorenoArg
 
+
+Del ejercicio de los empleados agregar un metodo que devuelva un
+ArrayList de empleados pero ordenado por nombre.
+2. Del ejercicio de la carga de personas (Plantel de la clase 4), agregar un método que devuelva un arraylist de personas ordenadas por
+apellido y nombre. Es decir que todas las personas que tengan el mis-
+mo apellido deben estar juntas pero ordenadas entre sí por nombre.
 
 
 

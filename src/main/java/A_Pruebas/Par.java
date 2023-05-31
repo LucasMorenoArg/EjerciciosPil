@@ -57,4 +57,5 @@ public class Par<T extends Comparable> {
         Collections.sort(c1.compareTo(c2));
     }*/
 
+
 }

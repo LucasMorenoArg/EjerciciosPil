@@ -49,7 +49,11 @@ public class Main_Clase_06 {
                System.out.println("Total presentismo " + plantel.presentAdministradores());
                System.out.println("Sueldo mas Bajo " + plantel.sueldoMenor());
                System.out.println("Sueldo Promedio Obreros " + plantel.promedioObreros());
-               System.out.println("Lista ordenada por nombre " + plantel.ordenarEmpleados());
+
+               listadoEmpleados.forEach(emp -> System.out.println(emp));
+
+
+
 
 
 

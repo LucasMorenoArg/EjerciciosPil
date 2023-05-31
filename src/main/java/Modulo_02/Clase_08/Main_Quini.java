@@ -7,6 +7,7 @@ public class Main_Quini {
     public static void main(String[] args) {
         Sorteo sorteo = new Sorteo();
 
+        
         ArrayList<Boleta> boletas = new ArrayList<>();
         Random random = new Random();
 

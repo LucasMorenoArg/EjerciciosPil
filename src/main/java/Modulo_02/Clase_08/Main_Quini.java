@@ -43,12 +43,6 @@ public class Main_Quini {
             }
         }
 
-
-
-
-
-
-
     }
 
 }

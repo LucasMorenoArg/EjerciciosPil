@@ -50,7 +50,7 @@ public class Main_Clase_06 {
                System.out.println("Sueldo mas Bajo " + plantel.sueldoMenor());
                System.out.println("Sueldo Promedio Obreros " + plantel.promedioObreros());
 
-               listadoEmpleados.forEach(emp -> System.out.println(emp));
+               //listadoEmpleados.forEach(emp -> System.out.println(emp));
 
 
 

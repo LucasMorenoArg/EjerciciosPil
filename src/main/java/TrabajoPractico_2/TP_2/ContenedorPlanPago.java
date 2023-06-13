@@ -10,12 +10,15 @@ public class ContenedorPlanPago {
     public ContenedorPlanPago(List<PlanPago> planes) {
         this.planes = planes;
     }
+
     public List<PlanPago> getPlanes() {
         return planes;
     }
+
     public void setPlanes(List<PlanPago> planes) {
         this.planes = planes;
     }
+
     @Override
     public String toString() {
         return "contenedorPlanPago{" +
@@ -23,32 +26,34 @@ public class ContenedorPlanPago {
                 '}';
     }
 
-    public void agregarPlandePago(String nombreContrib, int cantCuotas, double importeCuota){
+    public void agregarPlandePago(String nombreContrib, int cantCuotas, double importeCuota) {
         List<Cuota> cuotas = new ArrayList<>();
-        for (int i = 0; i <cantCuotas ; i++) {
+        for (int i = 0; i < cantCuotas; i++) {
             Cuota cuota = new Cuota();
             cuota.setImporte(importeCuota);
             cuota.setEstado("pendiente");
             cuotas.add(cuota);
         }
-        PlanPago planPago=new PlanPago();
+        PlanPago planPago = new PlanPago();
         planPago.setNombreContribuyente(nombreContrib);
         planPago.setCuotas(cuotas);
-        planPago.setTotalAdeudado(importeCuota*cantCuotas);
+        planPago.setTotalAdeudado(importeCuota * cantCuotas);
         planes.add(planPago);
     }
 
-    public void registraPago(String nombre, int demoraDias){
-        for (PlanPago plan: planes) {
+    public void registraPago(String nombre, int demoraDias) {
+        for (PlanPago plan : planes) {
             if (plan.getNombreContribuyente().equals(nombre)) {
                 plan.pagoCuota(demoraDias);
             }
         }
     }
 
-    public void pagosTotal(){
-        for (PlanPago plan:planes) {
-            System.out.println(plan.getCuotas());
+    public void pagosTotal() {
+        for (PlanPago plan : planes) {
+            for (Cuota cuota : plan.getCuotas()) {
+                System.out.println(cuota.getEstado());
+            }
         }
     }
 }

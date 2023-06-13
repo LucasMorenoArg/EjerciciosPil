@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContenedorPlanPago {
-
     private List<PlanPago> planes;
 
     public ContenedorPlanPago(List<PlanPago> planes) {
@@ -34,6 +33,7 @@ public class ContenedorPlanPago {
             cuota.setEstado("pendiente");
             cuotas.add(cuota);
         }
+
         PlanPago planPago = new PlanPago();
         planPago.setNombreContribuyente(nombreContrib);
         planPago.setCuotas(cuotas);
@@ -45,6 +45,7 @@ public class ContenedorPlanPago {
         for (PlanPago plan : planes) {
             if (plan.getNombreContribuyente().equals(nombre)) {
                 plan.pagoCuota(demoraDias);
+
             }
         }
     }
@@ -52,8 +53,10 @@ public class ContenedorPlanPago {
     public void pagosTotal() {
         for (PlanPago plan : planes) {
             for (Cuota cuota : plan.getCuotas()) {
-                System.out.println(cuota.getEstado());
+                //System.out.println(cuota.getEstado() + cuota.getNumCuota());}
+                System.out.println(cuota);
             }
         }
     }
 }
+

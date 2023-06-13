@@ -1,5 +1,6 @@
 package TrabajoPractico_2.TP_2;
-
+//carlos lopez;3;100
+//carlos lopez;6
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class Main_Tp {
         List<PlanPago> listaPLanes = new ArrayList<>();
         ContenedorPlanPago cont = new ContenedorPlanPago(listaPLanes);
         Scanner sc= new Scanner(new File("contribuyente.txt"));
-        Scanner scp = new Scanner(new File("pago.txt"));
+        Scanner scp = new Scanner(new File("pagos.txt"));
 
         sc.useDelimiter("[\\n\\r;]+");
         while (sc.hasNextLine()){
@@ -27,14 +28,8 @@ public class Main_Tp {
             String nombre = scp.next();
             int demora = scp.nextInt();
             cont.registraPago(nombre,demora);
-            //System.out.println("Registró pago " + nombre);
         }
 
-       /* for ( PlanPago plan: listaPLanes) {
-           // System.out.println(plan.getTotalAdeudado());
-            System.out.println(plan.getCuotas().equals("abonada"));
-
-        }*/
         cont.pagosTotal();
 
 

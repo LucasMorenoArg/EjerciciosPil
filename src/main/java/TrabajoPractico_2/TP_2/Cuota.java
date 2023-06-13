@@ -4,7 +4,6 @@ public class Cuota {
     private int numCuota;
     private double importe;
     private String estado;
-
     public Cuota() {
     }
 

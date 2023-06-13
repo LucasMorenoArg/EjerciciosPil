@@ -9,7 +9,7 @@ public class PlanPago {
     private double interesesCobrados;
     public PlanPago() {
     }
-    public PlanPago(String nombreContribuyente, double totalAdeudado, List<Cuota> cuotas) {
+    public PlanPago(String nombreContribuyente, double totalAdeudado, List<Cuota>cuotas) {
         this.nombreContribuyente = nombreContribuyente;
         this.totalAdeudado = totalAdeudado;
         this.cuotas = cuotas;
@@ -52,7 +52,7 @@ public class PlanPago {
         } else {
             for (Cuota cuota : cuotas){
                 if (cuota.getEstado().equals("pendiente")){
-                    cuota.setEstado("abonada");
+                     cuota.setEstado("pendiente");
                      double intDiario = cuota.getImporte()*0.5;
                      double interesCuota = intDiario*demora;
                      cargarInteres(interesCuota);

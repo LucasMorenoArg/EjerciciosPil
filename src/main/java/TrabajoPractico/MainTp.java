@@ -19,7 +19,7 @@ public class MainTp {
                 String titulo = sc.next();
                 int precioRepo = sc.nextInt();
                 String estado = sc.next();
-                biblioteca.agregarLibro(new Libro(codigo,titulo,precioRepo, estado));
+                biblioteca.agregarLibro(new Libro (codigo, titulo, precioRepo, estado));
             }
         } catch (FileNotFoundException e) {
             System.out.println("Archivo no encontrado");
@@ -44,9 +44,5 @@ public class MainTp {
         biblioteca.buscarSolicitantexTitulo("el aleph");
         System.out.println(biblioteca.mostrarEstadoxLibro());
         System.out.println(biblioteca.promedio());
-
-
-
-
     }
 }

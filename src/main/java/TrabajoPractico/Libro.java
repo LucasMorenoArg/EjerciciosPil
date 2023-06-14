@@ -6,8 +6,7 @@ public class Libro {
     private int codigo;
     private String Titulo;
     private int precioReposicion;
-    private ArrayList<Prestamo> prestamoArrayList=new ArrayList<>();
-
+    private ArrayList<Prestamo> prestamoArrayList = new ArrayList<>();
     private String estado;
 
     public Libro() {

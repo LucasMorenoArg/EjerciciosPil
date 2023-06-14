@@ -1,4 +1,4 @@
-package TrabajoPractico_2.TP_2;
+package TrabajoPractico_2;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

@@ -4,9 +4,7 @@ import java.util.ArrayList;
 
 public class Biblioteca {
 
-
     private ArrayList<Libro> libroArrayList = new ArrayList<>();
-
 
     public void agregarLibro(Libro e) {
         libroArrayList.add(e);
@@ -27,6 +25,7 @@ public class Biblioteca {
         int disponible = 0;
         int prestado = 0;
         int extraviado = 0;
+
         for (Libro p : libroArrayList) {
             if (p.getEstado().equalsIgnoreCase("disponible")) {
                 disponible++;
@@ -37,12 +36,10 @@ public class Biblioteca {
             if (p.getEstado().equalsIgnoreCase("extraviado")) {
                 extraviado++;
             }
-
         }
-        return " Libros en estado disponible = " + disponible +
+        return  "Libros en estado disponible = " + disponible +
                 " Libros en estado prestado = " + prestado +
                 " Libros en estado extraviado = " + extraviado;
-
     }
 
     public String sumarPrecioExtraviados() {
@@ -68,7 +65,6 @@ public class Biblioteca {
         for (Libro l: libroArrayList) {
             sumaPrestamos += l.getPrestamoArrayList().size();
         }
-
         return "Promedio de prestamo por libro "+ sumaPrestamos / libroArrayList.size();
     }
 }

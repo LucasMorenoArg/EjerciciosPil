@@ -52,7 +52,7 @@ public class PlanPago {
         } else {
             for (Cuota cuota : cuotas){
                 if (cuota.getEstado().equals("pendiente")){
-                     cuota.setEstado("pendiente");
+                     cuota.setEstado("abonada");
                      double intDiario = cuota.getImporte()*0.5;
                      double interesCuota = intDiario*demora;
                      cargarInteres(interesCuota);

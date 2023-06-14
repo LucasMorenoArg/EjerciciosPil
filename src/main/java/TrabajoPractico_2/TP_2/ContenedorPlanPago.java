@@ -2,6 +2,7 @@ package TrabajoPractico_2.TP_2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ContenedorPlanPago {
     private List<PlanPago> planes;
@@ -49,14 +50,32 @@ public class ContenedorPlanPago {
             }
         }
     }
-
-    public void pagosTotal() {
-        for (PlanPago plan : planes) {
-            for (Cuota cuota : plan.getCuotas()) {
-                //System.out.println(cuota.getEstado() + cuota.getNumCuota());}
-                System.out.println(cuota);
-            }
+    public long pagosTotal() {
+           long total = planes.stream().filter(l -> l.getCuotas()
+                .stream()
+                .allMatch(cuota -> cuota.getEstado()
+                .equals("abonada"))).count();
+           return total;
         }
+
+    public double sumaDeuda(){
+         double total = planes.stream().map(p -> p.getTotalAdeudado())
+                        .reduce(0d, (a, b) -> a + b);
+
+         return total;
+    }
+
+    public List<Cuota> listadoCuotaPaga(String nombre){
+
+       List<PlanPago> cuotas = planes.stream().filter(p -> p.getNombreContribuyente().equals(nombre))
+               .collect(Collectors.toList());
+         PlanPago planPago = cuotas.get(0);
+         List<Cuota> cuotasPagas =  planPago.getCuotas().stream().filter(c -> c.getEstado().equals("abonada"))
+               .collect(Collectors.toList());
+         return cuotasPagas;
+
     }
 }
+
+
 

@@ -1,6 +1,4 @@
 package TrabajoPractico_2.TP_2;
-//carlos lopez;3;100
-//carlos lopez;6
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -30,7 +28,9 @@ public class Main_Tp {
             cont.registraPago(nombre,demora);
         }
 
-        cont.pagosTotal();
+        System.out.println(cont.pagosTotal());
+        System.out.println(cont.sumaDeuda());
+        cont.listadoCuotaPaga("carlos lopez").forEach(System.out::println);
 
 
     }

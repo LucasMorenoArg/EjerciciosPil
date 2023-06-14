@@ -1,1 +1,2 @@
 ana gómez;3;50
+carlos lopez;3;100

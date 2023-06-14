@@ -1,26 +1,17 @@
 package TrabajoPractico_2.TP_2;
 
 public class Cuota {
-    private int numCuota;
+
     private double importe;
     private String estado;
     public Cuota() {
     }
 
-    public Cuota(int numCuota, double importe, String estado) {
-        this.numCuota = numCuota;
+    public Cuota(double importe, String estado) {
+
         this.importe = importe;
         this.estado = estado;
     }
-
-    public int getNumCuota() {
-        return numCuota;
-    }
-
-    public void setNumCuota(int numCuota) {
-        this.numCuota = numCuota;
-    }
-
     public double getImporte() {
         return importe;
     }
@@ -40,8 +31,7 @@ public class Cuota {
     @Override
     public String toString() {
         return "Cuota{" +
-                "numCuota=" + numCuota +
-                ", importe=" + importe +
+                " importe=" + importe +
                 ", estado='" + estado + '\'' +
                 '}';
     }
